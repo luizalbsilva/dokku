@@ -36,7 +36,7 @@ All applications should be stopped, and all docker containers and images deleted
 
 ```shell
 # stop all applications
-dokku --quiet apps | xargs dokku ps:stop
+dokku --quiet apps:list | xargs dokku ps:stop
 
 # cleanup containers and images
 dokku cleanup
@@ -52,3 +52,5 @@ The following directories must be deleted:
 - `~dokku`
 - `/var/lib/dokku`
 - `/var/log/dokku`
+- `/usr/bin/dokku
+
